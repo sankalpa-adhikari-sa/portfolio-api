@@ -88,7 +88,7 @@ class MessageViewSet(mixins.DestroyModelMixin,
                   mixins.ListModelMixin,
                   mixins.CreateModelMixin,
                   viewsets.GenericViewSet):
-    """Manage Message in database"""
+    """Manage Message in database."""
     serializer_class= serializers.MessageSerializer
     queryset= Message.objects.all()
     authentication_classes= [TokenAuthentication]
